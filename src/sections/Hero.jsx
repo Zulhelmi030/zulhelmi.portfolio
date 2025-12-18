@@ -1,7 +1,7 @@
 import Button from "../component/Button.jsx";
 import { words } from "../constants/index.js";
 import HeroExperience from "../component/HeroModels/HeroExperience.jsx";
-import {useGSAP} from '@gsap/react';
+import { useGSAP } from '@gsap/react';
 import gsap from "gsap";
 
 import AnimatedCounter from "../component/AnimatedCounter.jsx";
@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="background" />
+        <img src={import.meta.env.BASE_URL + "images/bg.png"} alt="background" />
       </div>
 
       <div className="hero-layout">

@@ -48,7 +48,7 @@ const Showcase = () => {
           {/*left side*/}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/myproject.jpg" alt="Ryde" />
+              <img src={import.meta.env.BASE_URL + "images/myproject.jpg"} alt="Ryde" />
             </div>
             <div className="text-content">
               <h2>Automate Reporting Sytem with AI</h2>
@@ -64,14 +64,14 @@ const Showcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="porject" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="Library Management" />
+                <img src={import.meta.env.BASE_URL + "images/project2.png"} alt="Library Management" />
               </div>
               <h2>Library Management Platform</h2>
             </div>
 
             <div className="porject" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7eb] ">
-                <img src="/images/project3.png" alt="Library Management" />
+                <img src={import.meta.env.BASE_URL + "images/project3.png"} alt="Library Management" />
               </div>
               <h2>YC Directory - A Startup Showcase App</h2>
             </div>
