@@ -25,7 +25,7 @@ const GlowCard = ({ card, children, index }) => {
       <div className="flex items-center gap-1 mb-5">
         {Array.from({ length: 5 }).map((_, index) => (
           <img
-            src="/images/star.png"
+            src={import.meta.env.BASE_URL + "images/star.png"}
             key={index}
             alt="star"
             className="size-5"

@@ -10,7 +10,7 @@ import AnimatedCounter from "../component/AnimatedCounter.jsx";
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo('.hero-text h1',
-      {y: 50, opacity: 0},
+      { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="background"/>
+        <img src="/images/bg.png" alt="background" />
       </div>
 
       <div className="hero-layout">
