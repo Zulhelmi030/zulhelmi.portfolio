@@ -8,7 +8,7 @@ Files: computer-optimized.glb [486.38KB] > C:\Users\hp\OneDrive\Documents\HCI\Po
 import { useGLTF } from '@react-three/drei'
 
 export function Computer(props) {
-  const { nodes, materials } = useGLTF('/models/computer-optimized-transformed.glb')
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL + "models/computer-optimized-transformed.glb")
   return (
     <group {...props} dispose={null}>
       <group position={[-4.005, 67.549, 58.539]}>
@@ -19,4 +19,4 @@ export function Computer(props) {
   )
 }
 
-useGLTF.preload('/models/computer-optimized-transformed.glb')
+useGLTF.preload(import.meta.env.BASE_URL + "models/computer-optimized-transformed.glb")
